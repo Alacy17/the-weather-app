@@ -25,6 +25,11 @@ h3 {
 ul {
   list-style: none;
 }
+
+footer {
+  margin: 10px;
+  font-size: 15px;
+}
 .container .search {
   margin-left: 200px;
   margin-top: 10px;
