@@ -8,18 +8,19 @@ h1 {
   left: 15px;
   top: 20px;
   color: darkorchid;
+  margin-left: 200px;
 }
 
 h2 {
   font-size: 50px;
-  margin-left: 200px;
+  margin-left: 170px;
   margin-top: 10px;
 }
 
 h3 {
   font-size: 20px;
   margin-top: 0px;
-  margin-left: 200px;
+  margin-left: 170px;
 }
 
 ul {
@@ -30,8 +31,13 @@ footer {
   margin: 10px;
   font-size: 15px;
 }
-.container .search {
+
+body {
   margin-left: 200px;
+}
+
+.container .search {
+  margin-left: 170px;
   margin-top: 10px;
   margin-bottom: 30px;
 }
@@ -89,5 +95,5 @@ footer {
   position: fixed;
   left: 430px;
   top: 35px;
-  margin-left: 70px;
+  margin-left: 270px;
 }
