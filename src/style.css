@@ -9,7 +9,6 @@ h1 {
   left: 15px;
   top: 20px;
   color: darkorchid;
-  margin: 0 auto;
 }
 
 h2 {
@@ -74,18 +73,12 @@ div.container {
   width: 700px;
 }
 
-.container .row {
-  margin-left: 40px;
-  margin-top: 60px;
-}
-
 .container .row .col-2 {
-  border: 2px solid black;
-  border-radius: 12px;
   margin: 8px;
   padding: 5px 10px;
   text-align: center;
   width: 105px;
+  display: block;
 }
 
 .currentLocationButton {
