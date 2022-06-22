@@ -5,7 +5,7 @@ h1 {
   padding: 30px;
   padding-bottom: 0px;
   width: fit-content;
-  position: fixed;
+  position: absolute;
   left: 15px;
   top: 20px;
   color: darkorchid;
@@ -73,14 +73,6 @@ div.container {
   width: 700px;
 }
 
-.container .row .col-2 {
-  margin: 8px;
-  padding: 5px 10px;
-  text-align: center;
-  width: 105px;
-  display: block;
-}
-
 .currentLocationButton {
   color: darkorchid;
   border-radius: 45%;
@@ -94,9 +86,21 @@ div.container {
   color: white;
 }
 
-.row .weather {
-  position: fixed;
+.weather {
+  position: absolute;
   left: 430px;
   top: 35px;
-  margin-left: 70px;
+  margin-left: 80px;
+}
+
+.weather-forecast-date {
+  font-size: 16px;
+  opacity: 0.5;
+}
+
+div.row {
+  border: 2px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }

@@ -47,43 +47,32 @@ function displayForecast(response) {
       forecastHTML =
         forecastHTML +
         `
-       <div class="row">
-        <div class="col-2">
-         <div>${formatDay(forecastDay.dt)}</div>
+       
+         <div class="col-2">
+           <div class="weather-forecast-date">${formatDay(forecastDay.dt)}</div>
           
-          <div class="weather-forecast-temperatures">
-           <span class="weather-forecast-temperature-max"> ${Math.round(
-             forecastDay.temp.max
-           )}° </span> 
+             <div class="weather-forecast-temperatures">
+               <span class="weather-forecast-temperature-max"> ${Math.round(
+                 forecastDay.temp.max
+               )}° </span> 
+          
+               <img
+                 src="https://openweathermap.org/img/wn/${
+                   forecastDay.weather[0].icon
+                 }@2x.png"
+                 alt=""
+                 width="38"
+               />
+             </div>
+           </div>
           </div>
-           </br>
-           <img
-              src="https://openweathermap.org/img/wn/${
-                forecastDay.weather[0].icon
-              }@2x.png"
-              alt=""
-              width="38"
-            />
-         </div>
-        </div>
+        
         `;
     }
   });
   forecastHTML = forecastHTML + `</div>`;
   forecastElement.innerHTML = forecastHTML;
 }
-
-//function displayForecast(response) {
-//console.log(response);
-//let forecast = response.data.daily;
-//let forecastElement = document.querySelector("#forecast");
-//forecast.forEach(function (forecastDay, index) {
-//if (index < 6)
-//document.querySelector("#forecast-day").innerHTML = response.data.dt;
-//document.querySelector("#forecast-temp").innerHTML = Math.round(
-//response.data.daily.temp
-//);
-//}
 
 function getForecast(coordinates) {
   console.log(coordinates);
