@@ -21,6 +21,7 @@ h3 {
   font-size: 20px;
   margin-top: 0px;
   margin-left: 170px;
+  opacity: 0.6;
 }
 
 ul {
@@ -95,12 +96,10 @@ div.container {
 
 .weather-forecast-date {
   font-size: 16px;
-  opacity: 0.5;
+  opacity: 0.6;
 }
 
-div.row {
-  border: 2px;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+.col {
+  margin-top: 70px;
+  text-align: center;
 }
